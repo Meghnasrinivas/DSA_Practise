@@ -22,8 +22,9 @@ class stack:
             raise IndexError("Stack is empty")
 
     def is_empty(self):
-        return len(self.stack) == 0
-        print(f"Stack is empty: {len(self.stack) == 0}")
+        empty = len(self.stack) == 0
+        print(f"Stack is empty: {empty}")
+        return empty
 
     def size(self):
         print(f"Size of stack: {len(self.stack)}")
